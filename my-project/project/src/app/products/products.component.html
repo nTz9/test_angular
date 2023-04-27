@@ -1,0 +1,20 @@
+<div class="card-list">
+    <div class="message">
+        <p class="message-valid">{{productMessage}}</p>
+    </div>
+    <div class="card" *ngFor="let item of productList">
+        <div class="product-image">
+            <img src="{{item.image}}" alt="" width="100px" height="100px">
+        </div>
+        <div class="info-product">
+            <h1 class="product-name">{{item.name}}</h1>
+            <p class="price">Product price: {{item.price}}</p>
+            <p class="category">Product category: {{item.category}}</p>
+            <p class="description">{{item.description}}</p>
+        </div>
+        <button (click)="deleteProduct(item.id)" class="delete-button">Delete</button>
+        <button class="update-button"><a type="button" routerLink="/update-product/{{item.id}}">Update</a></button>
+        
+    
+    </div>
+</div>

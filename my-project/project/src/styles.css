@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+}
+.screen-background-shape {
+    transform: rotate(45deg);
+    position: absolute;
+}
+.screen-background-shape1 {
+    height: 320px;
+    width: 320px;
+    background: #5cdb95;
+    top: -80px;
+    right: 80px;
+    border-radius: 0 72px 0 0;
+}
+.screen-background-shape2 {
+    height: 230px;
+    width: 220px;
+    background: #5cdb95;
+    top: -192px;
+    right: 14px;
+}
+.screen-background-shape3 {
+    height: 960px;
+    width: 190px;
+    border-radius: 32px;
+}

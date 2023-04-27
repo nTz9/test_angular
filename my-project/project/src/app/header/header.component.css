@@ -1,0 +1,75 @@
+.container-nav {
+    background-image: linear-gradient(-220deg, purple, aqua 90%);
+    margin: 0;
+    text-align: center;
+}
+.nav{
+    display:grid;
+    justify-content:center;
+}
+h1{
+    font-size: 20px;
+}
+ul{
+    font-family: sans-serif;
+    display: flex;
+    gap: 50px;
+    width: 60px;
+    
+}
+ul li{
+    list-style: none;
+    margin: 0 10px;
+    display: inline-block;
+}
+ul li a{
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 8px 10px;
+    transition: all 0.5s ease;
+}
+ul li a:hover{
+    color: #30edf4;
+}
+.container-text {
+    text-align: center;
+    margin-top: 5%;
+}
+.static-text {
+    font-size: 60px;
+    padding: 2px 2px;
+    border: 0;
+    border-radius: 0.1px;
+    animation: slide 5s ease-in infinite;
+    color: aqua;
+}
+
+@keyframes slide {
+    0%{
+        transform: skewX(53deg) translate(-500px);
+        opacity: 0;
+    }
+    60%{
+        transform: translateX(0px);
+    }
+    62%{
+        transform: skew(0deg) translate(30px);
+    }
+    70%{
+        transform: skew(-20deg);
+        opacity: 1;
+    }
+    80%{
+        transform: skew(0deg) translate(0);
+    }
+    90%{
+        transform: skew(-5deg);
+    }
+    100%{
+        transform: skew(0deg);
+    }
+}
+
